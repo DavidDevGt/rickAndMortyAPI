@@ -81,7 +81,7 @@
     display: grid;
     grid-template-columns: 40% auto;
     overflow: hidden;
-    height: 170px;
+    height: 150px;
     border-radius: 30px;
     transition: 0.3s ease-in-out;
 }
