@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* General settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    width: 100%;
+    height: 8vh;
+    background: #333;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+    .title{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+    .title:hover{
+        scale: 1.1;
+    }
+
+    .links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+
+        .link{
+           @extend .title;
+           padding: 0 15px;
+        }
+        .link:hover{
+            background-color: rgba(255,255,255,.1);
+        }
+    }
+}
+.message{
+    margin: 3vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+} 
+
+.container{
+    width: 70%;
+    margin: auto;
+    padding-top: 5vh;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+    grid-row-gap: 20px;
+
+    .card{
+        
+        background: #444;
+        color: #fff;
+        display: grid;
+        grid-template-columns: 40% auto;
+        overflow: hidden;
+        height: 150px;
+        border-radius: 10px;
+        transition: .3s ease-in-out;
+        img{
+            width: 100%;
+        }
+        .data{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .card:hover{
+        transform: scale(1.1);
+    }
+}
+
+.pages{
+    width: 70%;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    a {
+        background: #444;
+        cursor: pointer;
+        color: white;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: .3s ease-in-out;
+        border-radius: 5px;
+    }
+    a:hover{
+        transform: scale(1.08);
+    }
+}
+
+footer{
+    width: 100%;
+    height: 5vh;
+    background: #444;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    
+}
